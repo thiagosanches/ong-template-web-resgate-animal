@@ -77,9 +77,7 @@ cd ong-template-web-resgate-animal
 ong/
 ├── data/
 │   ├── animals.json                      # Animal data
-│   ├── products.json                     # Product data
-│   ├── animals-local-images-example.json # Example with local images
-│   └── products-local-images-example.json # Example with local images
+│   └── products.json                     # Product data
 ├── images/
 │   ├── animals/                          # Animal photos folder
 │   ├── products/                         # Product photos folder
@@ -158,15 +156,17 @@ The website updates automatically!
 
 ## Adding Your Own Photos
 
-### Option 1: Local Images (Recommended)
+The template comes with **working demo images** from Unsplash. You can use them as-is or replace with your own photos.
+
+### Using Your Own Local Images (Recommended)
 
 1. **Add photos to the images folder:**
    - Animal photos: `images/animals/`
    - Product photos: `images/products/`
 
 2. **Optimize your images** (recommended):
-   - Resize to 800x600 pixels
-   - Compress to reduce file size (< 500KB)
+   - Resize to 800x600 pixels max
+   - Compress to reduce file size (< 500KB ideal)
    - Use JPEG format for photos
 
 3. **Update JSON files** with local paths:
@@ -179,14 +179,25 @@ The website updates automatically!
    - Use hyphens instead of spaces
    - Examples: `luna-labrador.jpg`, `coleira-azul.jpg`
 
-### Option 2: External Images (Unsplash)
+### Using External Images (Unsplash)
 
-You can still use Unsplash URLs if you prefer:
+The template **already uses Unsplash URLs** in the demo data:
 ```json
 "image": "https://images.unsplash.com/photo-..."
 ```
 
-**Note:** For security, only Unsplash URLs and local images are allowed.
+These work immediately without any setup!
+
+**Note:** For security, only Unsplash URLs and local `images/` paths are allowed.
+
+### What Happens if Image is Missing?
+
+✅ **No worries!** The website automatically shows a placeholder with "Imagem não disponível" (Image not available) if:
+- The image file doesn't exist
+- The URL is broken
+- The path is incorrect
+
+This means the site won't break - it degrades gracefully.
 
 ### Image Guidelines
 
