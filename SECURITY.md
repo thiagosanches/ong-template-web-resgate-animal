@@ -77,9 +77,7 @@ function isValidImageUrl(url) {
 - `Referrer-Policy: strict-origin-when-cross-origin` - Limits referrer information
 - `Permissions-Policy` - Disables unnecessary browser features
 
-#### Server Configuration Files
-- `.htaccess` - Apache server configuration
-- `_headers` - GitHub Pages/Netlify/Vercel configuration
+**Note:** Security headers are set via `<meta>` tags in the HTML `<head>` section. GitHub Pages doesn't support custom server configuration files, but the meta tags provide equivalent protection in browsers.
 
 ### 5. Secure WhatsApp Integration
 
@@ -136,20 +134,7 @@ if (!Array.isArray(data)) {
 - `frame-ancestors 'none'` in CSP
 - Prevents site from being embedded in iframes
 
-### 8. Directory Protection
-
-#### .htaccess Configuration
-```apache
-# Disable directory browsing
-Options -Indexes
-
-# Prevent access to sensitive files
-<FilesMatch "^\.">
-    Require all denied
-</FilesMatch>
-```
-
-### 9. Safe External Links
+### 8. Safe External Links
 
 All external links use:
 - `rel="noopener noreferrer"`
@@ -208,7 +193,7 @@ grid.innerHTML = products.map(product => `
 ### 4. Information Disclosure (LOW)
 **Before:** Directory browsing enabled
 
-**Fixed:** Disabled in .htaccess
+**Fixed:** GitHub Pages automatically disables directory browsing. JSON files are accessible only by direct URL, which is required for the website to function.
 
 ### 5. Reverse Tabnabbing (LOW)
 **Before:** `window.open()` without security attributes
@@ -242,10 +227,10 @@ validateAnimalData({id: 1, name: '<script>alert("xss")</script>'});
 
 ### For Production
 1. **Enable HTTPS** (GitHub Pages provides this automatically)
-2. **Uncomment HSTS** in .htaccess after HTTPS is enabled
-3. **Regular dependency audits** (if adding npm packages)
-4. **Monitor CSP violations** using report-uri
-5. **Implement rate limiting** on WhatsApp clicks (optional)
+2. **Use custom domain** (optional) - Adds professional appearance
+3. **Regular dependency audits** (if adding npm packages in the future)
+4. **Monitor CSP violations** using browser console
+5. **Implement rate limiting** on WhatsApp clicks (optional, client-side)
 
 ### For Data Maintainers
 1. **Validate JSON files** before committing

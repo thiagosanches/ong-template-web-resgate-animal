@@ -90,8 +90,6 @@ ong/
 │   └── main.css                          # CSS styling
 ├── index.html                            # Main HTML file
 ├── favicon.svg                           # Website icon
-├── .htaccess                             # Apache security config
-├── _headers                              # GitHub Pages headers
 ├── README.md                             # This file
 ├── SECURITY.md                           # Security documentation
 └── WEB_STANDARDS.md                      # Web standards & accessibility
