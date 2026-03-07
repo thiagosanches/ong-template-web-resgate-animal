@@ -6,7 +6,7 @@ A modern, fully accessible static website template built specifically for Brazil
 
 ## Demo
 
-🌐 **[View Live Demo](https://thiagosanches.github.io/ong-template-web-resgate-animal/)** *(Coming soon - deploy your own in 5 minutes!)*
+🌐 **[View Live Demo](https://thiagosanches.github.io/ong-template-web-resgate-animal/)**
 
 ## Why Use This Template?
 
