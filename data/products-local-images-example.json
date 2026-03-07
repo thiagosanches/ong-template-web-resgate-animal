@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Coleira Personalizada",
+    "category": "Acessórios",
+    "price": 45.00,
+    "currency": "BRL",
+    "description": "Coleira durável e estilosa para seu pet. Disponível em várias cores e tamanhos.",
+    "image": "images/products/coleira.jpg",
+    "whatsapp": "+5511999999999"
+  },
+  {
+    "id": 2,
+    "name": "Ração Premium para Cães - 10kg",
+    "category": "Comida",
+    "price": 120.00,
+    "currency": "BRL",
+    "description": "Nutrição de alta qualidade para seu amigo peludo. Feita com ingredientes naturais.",
+    "image": "images/products/racao.jpg",
+    "whatsapp": "+5511999999999"
+  }
+]

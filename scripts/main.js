@@ -42,8 +42,28 @@ function validateProductData(product) {
            typeof product.whatsapp === 'string';
 }
 
-// Validate image URL
+// Validate image URL - supports both local and external images
 function isValidImageUrl(url) {
+    if (typeof url !== 'string') {
+        return false;
+    }
+    
+    // Check if it's a local path (relative URL)
+    if (url.startsWith('images/') || url.startsWith('./images/') || url.startsWith('../images/')) {
+        // Validate it doesn't try to escape the images directory
+        const normalizedPath = url.replace(/^\.\.?\//g, '');
+        if (normalizedPath.startsWith('images/') && !normalizedPath.includes('..')) {
+            return true;
+        }
+        return false;
+    }
+    
+    // Check if it's a data URL (inline images)
+    if (url.startsWith('data:image/')) {
+        return true;
+    }
+    
+    // Check if it's a trusted external domain
     try {
         const urlObj = new URL(url);
         return TRUSTED_IMAGE_DOMAINS.some(domain => 

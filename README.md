@@ -16,14 +16,25 @@ A modern, static website for an animal rescue organization built to be hosted on
 ```
 ong/
 ├── data/
-│   ├── animals.json      # Animal data
-│   └── products.json     # Product data
+│   ├── animals.json                      # Animal data
+│   ├── products.json                     # Product data
+│   ├── animals-local-images-example.json # Example with local images
+│   └── products-local-images-example.json # Example with local images
+├── images/
+│   ├── animals/                          # Animal photos folder
+│   ├── products/                         # Product photos folder
+│   └── README.md                         # Image guidelines
 ├── scripts/
-│   └── main.js          # JavaScript functionality
+│   └── main.js                           # JavaScript functionality
 ├── styles/
-│   └── main.css         # CSS styling
-├── index.html           # Main HTML file
-└── README.md           # This file
+│   └── main.css                          # CSS styling
+├── index.html                            # Main HTML file
+├── favicon.svg                           # Website icon
+├── .htaccess                             # Apache security config
+├── _headers                              # GitHub Pages headers
+├── README.md                             # This file
+├── SECURITY.md                           # Security documentation
+└── WEB_STANDARDS.md                      # Web standards & accessibility
 ```
 
 ## How to Update Content
@@ -38,10 +49,10 @@ Edit `data/animals.json` with the following structure:
   "name": "Animal Name",
   "type": "dog",
   "breed": "Breed Name",
-  "age": "X years",
-  "gender": "Male/Female",
+  "age": "X anos",
+  "gender": "Macho/Fêmea",
   "description": "Description of the animal",
-  "image": "https://image-url.com/image.jpg",
+  "image": "images/animals/photo.jpg",
   "status": "available"
 }
 ```
@@ -56,14 +67,54 @@ Edit `data/products.json` with the following structure:
   "name": "Product Name",
   "category": "Category",
   "price": 25.00,
-  "currency": "USD",
+  "currency": "BRL",
   "description": "Product description",
-  "image": "https://image-url.com/image.jpg",
+  "image": "images/products/photo.jpg",
   "whatsapp": "+5511999999999"
 }
 ```
 
 **Important**: Update the WhatsApp number in products.json to your actual contact number.
+
+## Adding Your Own Photos
+
+### Option 1: Local Images (Recommended)
+
+1. **Add photos to the images folder:**
+   - Animal photos: `images/animals/`
+   - Product photos: `images/products/`
+
+2. **Optimize your images** (recommended):
+   - Resize to 800x600 pixels
+   - Compress to reduce file size (< 500KB)
+   - Use JPEG format for photos
+
+3. **Update JSON files** with local paths:
+   ```json
+   "image": "images/animals/luna.jpg"
+   ```
+
+4. **Image naming tips:**
+   - Use lowercase letters
+   - Use hyphens instead of spaces
+   - Examples: `luna-labrador.jpg`, `coleira-azul.jpg`
+
+### Option 2: External Images (Unsplash)
+
+You can still use Unsplash URLs if you prefer:
+```json
+"image": "https://images.unsplash.com/photo-..."
+```
+
+**Note:** For security, only Unsplash URLs and local images are allowed.
+
+### Image Guidelines
+
+See `images/README.md` for detailed guidelines including:
+- Recommended file formats
+- Optimal image sizes
+- Compression tools
+- Security considerations
 
 ## Deployment to GitHub Pages
 
