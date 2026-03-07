@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="ONG de Resgate Animal - Encontre seu companheiro perfeito e apoie nossa missão">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self';
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' https://images.unsplash.com data:;
+        font-src 'self';
+        connect-src 'self';
+        frame-ancestors 'none';
+        base-uri 'self';
+        form-action 'self' https://wa.me;
+    ">
+    
+    <!-- Permissions Policy -->
+    <meta http-equiv="Permissions-Policy" content="
+        geolocation=(),
+        microphone=(),
+        camera=(),
+        payment=(),
+        usb=(),
+        magnetometer=(),
+        gyroscope=(),
+        accelerometer=()
+    ">
+    
+    <meta name="theme-color" content="#6366f1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ONG Resgate Animal - Salve uma Vida Hoje">
+    <meta property="og:description" content="Adote um animal resgatado e faça a diferença na vida deles">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    
+    <title>ONG Resgate Animal - Salve uma Vida Hoje</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="nav-container" role="navigation" aria-label="Navegação principal">
+            <div class="logo">
+                <h1>🐾 Resgate Animal</h1>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#home" class="nav-link active" role="menuitem">Início</a></li>
+                <li role="none"><a href="#animals" class="nav-link" role="menuitem">Animais</a></li>
+                <li role="none"><a href="#shop" class="nav-link" role="menuitem">Loja</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" role="region" aria-label="Banner principal">
+        <div class="hero-content">
+            <h2 class="hero-title">Dê uma Segunda Chance aos Animais Necessitados</h2>
+            <p class="hero-subtitle">Adote, apoie e faça a diferença na vida deles</p>
+            <div class="hero-buttons">
+                <a href="#animals" class="btn btn-primary" aria-label="Ver animais disponíveis para adoção">Conheça Nossos Animais</a>
+                <a href="#shop" class="btn btn-secondary" aria-label="Visitar loja para apoiar a ONG">Apoie-nos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animals Section -->
+    <main id="main-content">
+    <section id="animals" class="section" role="region" aria-labelledby="animals-heading">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="animals-heading" class="section-title">Animais Procurando um Lar</h2>
+                <p class="section-subtitle">Conheça nossos amigos esperando por uma família para sempre</p>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons" role="group" aria-label="Filtros de animais">
+                <button class="filter-btn active" data-filter="all" aria-pressed="true">Todos</button>
+                <button class="filter-btn" data-filter="dog" aria-pressed="false">Cães</button>
+                <button class="filter-btn" data-filter="cat" aria-pressed="false">Gatos</button>
+                <button class="filter-btn" data-filter="available" aria-pressed="false">Disponíveis</button>
+            </div>
+
+            <!-- Animals Grid -->
+            <div id="animals-grid" class="grid" role="list" aria-label="Lista de animais">
+                <!-- Animals will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Products/Shop Section -->
+    <section id="shop" class="section section-alt" role="region" aria-labelledby="shop-heading">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="shop-heading" class="section-title">Apoie Nossa Missão</h2>
+                <p class="section-subtitle">Adquira produtos de qualidade para pets e nos ajude a resgatar mais animais</p>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="filter-buttons" role="group" aria-label="Filtros de produtos">
+                <button class="category-btn active" data-category="all" aria-pressed="true">Todos os Produtos</button>
+                <button class="category-btn" data-category="Comida" aria-pressed="false">Comida</button>
+                <button class="category-btn" data-category="Brinquedos" aria-pressed="false">Brinquedos</button>
+                <button class="category-btn" data-category="Acessórios" aria-pressed="false">Acessórios</button>
+                <button class="category-btn" data-category="Móveis" aria-pressed="false">Móveis</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div id="products-grid" class="grid" role="list" aria-label="Lista de produtos">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section" role="region" aria-labelledby="about-heading">
+        <div class="container">
+            <div class="about-content">
+                <h2 id="about-heading" class="section-title">Sobre Nossa Missão</h2>
+                <p class="about-text">
+                    Somos dedicados a resgatar, reabilitar e realocar animais abandonados e maltratados. 
+                    Todo animal merece amor, cuidado e um lar seguro. Nossa equipe trabalha incansavelmente para fornecer 
+                    cuidados médicos, abrigo e um caminho para encontrar famílias definitivas para cães, gatos e outros animais necessitados.
+                </p>
+                <p class="about-text">
+                    Com seu apoio através de adoções e compras, podemos continuar nossa missão de salvar mais vidas 
+                    e criar finais felizes para nossos amigos peludos.
+                </p>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>Email: <a href="mailto:contato@resgateaanimal.org" class="footer-link">contato@resgateaanimal.org</a></p>
+                    <p>Telefone: <a href="tel:+5511999999999" class="footer-link">+55 11 99999-9999</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Siga-nos</h3>
+                    <p>Instagram | Facebook | Twitter</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Apoie</h3>
+                    <p>Sua contribuição faz a diferença</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ONG Resgate Animal. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>

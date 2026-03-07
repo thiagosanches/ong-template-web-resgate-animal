@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Coleira Personalizada",
+    "category": "Acessórios",
+    "price": 45.00,
+    "currency": "BRL",
+    "description": "Coleira durável e estilosa para seu pet. Disponível em várias cores e tamanhos.",
+    "image": "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400",
+    "whatsapp": "+5511999999999"
+  },
+  {
+    "id": 2,
+    "name": "Ração Premium para Cães - 10kg",
+    "category": "Comida",
+    "price": 120.00,
+    "currency": "BRL",
+    "description": "Nutrição de alta qualidade para seu amigo peludo. Feita com ingredientes naturais.",
+    "image": "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=400",
+    "whatsapp": "+5511999999999"
+  },
+  {
+    "id": 3,
+    "name": "Arranhador para Gatos",
+    "category": "Brinquedos",
+    "price": 89.00,
+    "currency": "BRL",
+    "description": "Mantenha seu gato entretido e seus móveis seguros. Construção robusta de sisal.",
+    "image": "https://images.unsplash.com/photo-1545249390-6bdfa286032f?w=400",
+    "whatsapp": "+5511999999999"
+  },
+  {
+    "id": 4,
+    "name": "Bolsa Transportadora",
+    "category": "Acessórios",
+    "price": 150.00,
+    "currency": "BRL",
+    "description": "Transportadora confortável e segura para viagens ao veterinário ou passeios. Adequada para pets pequenos e médios.",
+    "image": "https://images.unsplash.com/photo-1591769225440-811ad7d6eab3?w=400",
+    "whatsapp": "+5511999999999"
+  },
+  {
+    "id": 5,
+    "name": "Kit de Brinquedos Interativos",
+    "category": "Brinquedos",
+    "price": 55.00,
+    "currency": "BRL",
+    "description": "Mantenha seu pet ativo e engajado com este conjunto divertido. Inclui bolas, cordas e brinquedos com som.",
+    "image": "https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?w=400",
+    "whatsapp": "+5511999999999"
+  },
+  {
+    "id": 6,
+    "name": "Cama Confortável para Pets",
+    "category": "Móveis",
+    "price": 180.00,
+    "currency": "BRL",
+    "description": "Cama ultra macia e confortável para seu pet. Capa lavável na máquina.",
+    "image": "https://images.unsplash.com/photo-1615751072497-5f5169febe17?w=400",
+    "whatsapp": "+5511999999999"
+  }
+]

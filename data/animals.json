@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Luna",
+    "type": "dog",
+    "breed": "Vira-lata (Mix Labrador)",
+    "age": "2 anos",
+    "gender": "Fêmea",
+    "description": "Luna é uma menina doce e energética que adora brincar de buscar e fazer carinho. Ela é ótima com crianças e outros cães.",
+    "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400",
+    "status": "available"
+  },
+  {
+    "id": 2,
+    "name": "Max",
+    "type": "dog",
+    "breed": "Pastor Alemão",
+    "age": "3 anos",
+    "gender": "Macho",
+    "description": "Max é um companheiro leal e protetor. Ele é bem treinado e seria perfeito para uma família ativa.",
+    "image": "https://images.unsplash.com/photo-1568572933382-74d440642117?w=400",
+    "status": "available"
+  },
+  {
+    "id": 3,
+    "name": "Whiskers",
+    "type": "cat",
+    "breed": "Pelo Curto Doméstico",
+    "age": "1 ano",
+    "gender": "Macho",
+    "description": "Whiskers é um gatinho brincalhão que adora perseguir brinquedos e tirar sonecas em lugares ensolarados. Ele é muito carinhoso.",
+    "image": "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400",
+    "status": "available"
+  },
+  {
+    "id": 4,
+    "name": "Bella",
+    "type": "cat",
+    "breed": "Siamês Mix",
+    "age": "4 anos",
+    "gender": "Fêmea",
+    "description": "Bella é uma gata calma e gentil que aprecia ambientes tranquilos. Ela é perfeita para quem procura um companheiro pacífico.",
+    "image": "https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?w=400",
+    "status": "available"
+  },
+  {
+    "id": 5,
+    "name": "Rocky",
+    "type": "dog",
+    "breed": "Beagle",
+    "age": "5 anos",
+    "gender": "Macho",
+    "description": "Rocky é um cachorro amigável e curioso. Ele adora passear e explorar novos lugares.",
+    "image": "https://images.unsplash.com/photo-1505628346881-b72b27e84530?w=400",
+    "status": "adopted"
+  }
+]
