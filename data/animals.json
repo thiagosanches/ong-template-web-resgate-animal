@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "name": "Luna",
+    "name": "Mel",
     "type": "dog",
     "breed": "Vira-lata (Mix Labrador)",
     "age": "2 anos",
     "gender": "Fêmea",
-    "description": "Luna é uma menina doce e energética que adora brincar de buscar e fazer carinho. Ela é ótima com crianças e outros cães.",
+    "description": "Mel é uma menina doce e energética que adora brincar de buscar e fazer carinho. Ela é ótima com crianças e outros cães.",
     "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400",
     "status": "available"
   },
